@@ -1,0 +1,7 @@
+.f-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-top: 5px;
+}

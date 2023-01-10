@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-body {
+body,
+html {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Alfa Slab One', cursive;
-    background-color: #F2EDDB;
+    background-color: #317AC7;
 }
 
 ul {

@@ -1,27 +1,26 @@
 import React from "react";
 import './assets/css/header.css'
-import logo from './assets/images/logo.png'
+import win from './assets/images/win.png'
+import result from './assets/images/notepad.png'
+import ticket from './assets/images/ticket.png'
+import wallet from './assets/images/wallet.png'
 
 const Header = () => {
-    return <div className="navbar">
+    return <div>
         <div className="navbar-container">
             <div className="nav-logo">
-                <img
-                    className="rounded-full w-8 h-8"
-                    src={logo}
-                    alt="user-profile" />
                 Lottery Heaven
             </div>
             <div className="nav-menu">
                 <ul>
-                    <li>Raffle</li>
-                    <li>Results</li>
-                    <li>Ticket Query</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <li className="hover-underline-animation"><img src={win} alt="Winner" /> <span>Raffle</span></li>
+                    <li className="hover-underline-animation"><img src={result} alt="Result" /> <span>Results</span></li>
+                    <li className="hover-underline-animation"><img src={ticket} alt="Ticket" /> <span>Ticket Query</span></li>
+                    <li className="hover-underline-animation"><img src={wallet} alt="Ticket" /> <span>Metamask</span></li>
                 </ul>
             </div>
         </div>
+        <div className="line"></div>
     </div>;
 };
 
