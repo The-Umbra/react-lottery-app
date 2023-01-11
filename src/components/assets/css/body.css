@@ -1,8 +1,11 @@
 .f-sec {
     display: flex;
+    height: calc(100vh - 129px);
     align-items: center;
     justify-content: center;
-    margin-top: 5px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .slider-container {
@@ -12,11 +15,13 @@
 
 .S-sec {
     display: flex;
+    min-height: 90vh;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
     color: #fcf9bf;
+    background-image: url("../images/lottobg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .S-sec h1 {
@@ -37,4 +42,12 @@
     justify-content: center;
     flex-direction: column;
     background-color: blueviolet;
+}
+
+.brand-line {
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/brand.jpg");
+    background-repeat: repeat;
+    background-size: contain;
 }
