@@ -6,6 +6,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     font-family: 'Alfa Slab One', cursive;
     background-color: #317AC7;
 }

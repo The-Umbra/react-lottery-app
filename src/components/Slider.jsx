@@ -1,24 +1,35 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { Component } from "react";
+import Slider from "react-slick";
+export default class SimpleSlider extends Component {
 
-const Slider = () => {
-    return (
-        <Carousel>
-            <div>
-                <img src="https://placehold.co/100x100" />
-                <p className="legend">Legend 1</p>
-            </div>
-            <div>
-                <img src="https://placehold.co/200x200" />
-                <p className="legend">Legend 2</p>
-            </div>
-            <div>
-                <img src="https://placehold.co/300x300" />
-                <p className="legend">Legend 3</p>
-            </div>
-        </Carousel>
-    );
-};
+    state = {
+        images: [
+            "/assets/slide_1.jpg",
+            "/assets/slide_2.jpg",
+            "/assets/slide_3.jpg"
+        ]
+    }
 
-export default Slider;
+    render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        };
+        return (
+            <div className="slider-container">
+                <Slider style={{ width: "100%", height: "350px" }} {...settings}>
+                    {this.state.images.map(image => (
+                        <div>
+                            <img style={{ width: "1024px", height: "350px" }} src={image} alt="Slide" />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+        );
+    }
+}

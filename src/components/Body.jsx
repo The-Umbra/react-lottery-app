@@ -1,14 +1,16 @@
 import React from "react";
 import Slider from './Slider'
 import './assets/css/body.css'
+import LotteryContainer from "./LotteryBody";
 
 const Body = () => {
-    return <div>
+    return <div className="root">
         <section className="f-sec">
             <Slider />
         </section>
         <section className="S-sec">
-            <div>123</div>
+            <h1>Active Raffle</h1>
+            <LotteryContainer />
         </section>
     </div>;
 };
