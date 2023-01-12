@@ -1,11 +1,24 @@
 .f-sec {
     display: flex;
-    height: calc(100vh - 129px);
+    flex-direction: column;
+    height: calc(100vh - 130px);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.f-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-head h1 {
+    font-size: clamp(4rem, 2.5vw, 6rem);
+    color: #fcf9bf;
+    text-shadow: .1em .1em 0 rgb(220, 20, 60);
 }
 
 .slider-container {
